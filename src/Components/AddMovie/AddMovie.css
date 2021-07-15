@@ -1,0 +1,8 @@
+.inputArea{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inputArea > * {
+    margin: 3% 0px;
+}
