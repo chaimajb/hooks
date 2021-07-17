@@ -5,7 +5,7 @@ import "./MovieList.css"
 
 function MovieList({ rateInput, searchInput, moviesData  }) {
     return (
-        <div className="movieList">
+        <div className = "movieList">
             {moviesData
                 .filter(
                     (movie) =>
@@ -15,7 +15,7 @@ function MovieList({ rateInput, searchInput, moviesData  }) {
                         movie.rating >= rateInput
                 )
                 .map((movie, index) => (
-                    <MovieCard key={index} movie={movie} />
+                    <MovieCard key={movie.id} movie={movie} />
                 ))}
         </div>
     );

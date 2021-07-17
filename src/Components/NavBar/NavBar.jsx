@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import { Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap'
+import React from 'react'
+import { Navbar, Nav, Form, FormControl} from 'react-bootstrap'
 import "./NavBar.css"
 import ReactStars from "react-rating-stars-component";
 
@@ -29,7 +29,7 @@ function NavBar({getSearchInput, getRateInput}){
                         size={35}
                         activeColor="#ffd700"
                 />,
-                <FormControl type="text" placeholder="Search" className= "mr-sm-2" className = "searchInput" onChange={handleSearch} />
+                <FormControl type="text" placeholder="Search" className= "mr-sm-2 searchInput" onChange={handleSearch} />
                 
             </Form>   
         </Navbar>
